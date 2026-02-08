@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Azure Website</title>
+    <style>
+        /* Make full height page and flex layout */
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+        body {
+            display: flex;
+            flex-direction: column;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Header with left-aligned link */
+        header {
+            background-color: #0078D4;
+            color: white;
+            padding: 20px;
+            text-align: left;
+        }
+        header a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        header a:hover {
+            text-decoration: underline;
+        }
+
+        /* Main content grows to fill remaining space */
+        main {
+            flex: 1;
+            padding: 20px;
+            min-height: 400px;
+        }
+
+        /* Footer sticks to bottom */
+        footer {
+            background-color: #f2f2f2;
+            color: #333;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1><a href="index.html">Index</a></h1>
+</header>
+
+<main>
+    <p>Prototype website for Sutton University.</p>
+    <p>Made with Azure VM.</p>
+</main>
+
+<footer>
+    &copy; 2026 My Azure Website
+</footer>
+
+</body>
+</html>
